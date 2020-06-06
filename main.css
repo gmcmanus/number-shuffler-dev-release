@@ -1,8 +1,27 @@
+div.student {
+  font-size: x-large;
+  width: 33.3vw;
+  height: 33.3vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 33.3vh;
+  margin-bottom: 33vh;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
 @media print {
-  h2 {
-    page-break-before: always;
+  @page {
+    margin: 0;
+    size: landscape;
   }
-  .no-print {
+  div.student {
+    break-before: page;
+  }
+  .input {
     display: none;
   }
 }
