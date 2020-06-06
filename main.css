@@ -1,5 +1,5 @@
 @media print {
-  dt {
+  h2 {
     page-break-before: always;
   }
   .no-print {
