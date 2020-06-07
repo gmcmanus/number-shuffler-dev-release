@@ -1,27 +1,30 @@
-div.student {
-  font-size: x-large;
-  width: 33.3vw;
-  height: 33.3vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 33.3vh;
-  margin-bottom: 33vh;
-}
-h1, h2, h3 {
-  text-align: center;
-}
-p {
-  text-align: justify;
-}
 @media print {
   @page {
     margin: 0;
     size: landscape;
   }
-  div.student {
+  .print-page {
     break-before: page;
+    font-size: x-large;
+    width: 50vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
   }
-  .input {
+  h1, h2, h3 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  .no-print {
     display: none;
+  }
+}
+@media not print {
+  .print-page {
+    display:none;
   }
 }
